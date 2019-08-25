@@ -5,3 +5,14 @@ html {
 .body {
 
 }
+
+@import "abstracts/base";
+@import "abstracts/typography";
+@import "abstracts/animations";
+@import "components/banner";
+@import "components/features";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/testimonies";
+@import "components/tip";

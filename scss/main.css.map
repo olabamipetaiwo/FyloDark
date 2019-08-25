@@ -1,8 +1,18 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,SAAS,EAAC,KAAK;CAClB",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,SAAS,EAAC,KAAK;CAClB;;ACFD,AAAA,IAAI,CAAC;EACD,SAAS,EAAC,KAAK;CAClB",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "abstracts/_base.scss",
+        "abstracts/_typography.scss",
+        "abstracts/_animations.scss",
+        "components/_banner.scss",
+        "components/_features.scss",
+        "components/_footer.scss",
+        "components/_form.scss",
+        "components/_header.scss",
+        "components/_testimonies.scss",
+        "components/_tip.scss"
     ],
     "names": [],
     "file": "main.css"

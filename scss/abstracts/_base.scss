@@ -1,7 +1,21 @@
+$primary :hsl(217, 28%, 15%);
+
+
+* {
+    margin:0;
+    padding:0;
+}
 html {
     font-size:62.5%;
 }
 
 .body {
-
+    position: relative;
+    font-family: "Barlow Condensed", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
 }
+
+
+.header__nav__list.show {
+    transform:scale(1);
+}
+

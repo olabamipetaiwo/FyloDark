@@ -1,8 +1,217 @@
-html {
-  font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 62.5%;
+}
+
+.body {
+  position: relative;
+  font-family: "Barlow Condensed", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.header__nav__list.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body {
+  font-family: "Ubuntu" ,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@-webkit-keyframes moveIn {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes anim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 8rem;
+  }
+}
+
+@keyframes anim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 8rem;
+  }
+}
+
+.banner {
+  margin-top: 3rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1c2431;
+  position: relative;
+  padding: 3rem;
+}
+
+.header__logo {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header__link {
+    display: block;
+  }
+}
+
+.header__nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header__nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: absolute;
+    background-color: #1c2431;
+    top: 5.5rem;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+.header__nav__list li {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header__nav__list li {
+    padding: 2rem;
+  }
+}
+
+.header__nav__list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__nav__list li a:hover {
+  text-decoration: underline;
+}
+
+.header__icon {
+  width: 2.5rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header__icon {
+    display: none;
+  }
+}
+
+.header__icon__line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+
+.header__icon__line::before, .header__icon__line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  right: 0;
+  visibility: visible;
+}
+
+.header__icon__line::before {
+  top: -.5rem;
+}
+
+.header__icon__line::after {
+  top: .5rem;
+}
+
+.close {
+  visibility: hidden;
+}
+
+.close::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */

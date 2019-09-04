@@ -1,9 +1,10 @@
-.testimonies {
+.testimonies{
     grid-column: col-start 1/ col-end 6;
     grid-row: 4/5;
     z-index:1;
     padding-top:5rem;
     padding-left:1rem;
+    padding-right:1rem;
     padding-bottom: 25rem;
     position:relative;
 
@@ -22,7 +23,6 @@
 
     &__box {
         background-color:$testimonial-bg;
-        min-height: 50%;
         padding:3rem;
         border-radius: 4px;
         z-index:2;

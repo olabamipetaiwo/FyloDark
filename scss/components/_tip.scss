@@ -1,7 +1,9 @@
 .tip {
-    grid-column: col-start 1/ col-end 6;
+     grid-column: col-start 1/ col-end 6;
      display:grid;
      grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+     padding-bottom:7rem;
+     
 
     &__img {
        display: grid;
@@ -17,7 +19,6 @@
 
     &__box {
         align-self:center;
-
 
         h2 {
             width: 60%;
@@ -44,3 +45,22 @@
         }
     }
  }
+
+
+@media (max-width:$mobile) { 
+    .tip { 
+        
+        &__box {
+
+            h2 {
+               width:100%;
+               padding-top:2rem;
+            }
+
+            p {
+                width:100%; 
+            }
+        }
+    }
+
+}

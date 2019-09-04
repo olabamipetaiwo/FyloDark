@@ -7,6 +7,8 @@
    background-size:100% 40%;
    padding-bottom:12rem;
 
+   
+
    display:grid;
    justify-items: center;
    align-items: center;
@@ -17,6 +19,7 @@
        justify-items: center;
        align-items: center;
        width:40%;
+
 
        img {
          width: 100%;
@@ -56,4 +59,18 @@
          }
       }
     }
+}
+
+
+@media (max-width:$mobile) { 
+
+  .banner {
+    &__img {
+      width:80%;
+    }
+
+    &__box {
+      width:80%;
+    }
+  }
 }

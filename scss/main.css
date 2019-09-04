@@ -158,6 +158,15 @@ p {
   font-weight: 700;
 }
 
+@media (max-width: 37.5rem) {
+  .banner__img {
+    width: 80%;
+  }
+  .banner__box {
+    width: 80%;
+  }
+}
+
 .container {
   background-color: #181f2a;
   display: -ms-grid;
@@ -215,28 +224,42 @@ p {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2rem;
-  -ms-grid-columns: minmax(min-content, 22rem) (minmax(10rem, 1fr))[auto-fit];
-      grid-template-columns: minmax(-webkit-min-content, 22rem) repeat(auto-fit, minmax(10rem, 1fr));
-      grid-template-columns: minmax(min-content, 22rem) repeat(auto-fit, minmax(10rem, 1fr));
-}
-
-@media (max-width: 33.2rem) {
-  .footer__box {
-    background-color: green;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__box-1 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 45.63rem) {
+  .footer__box-1 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
 .footer__box-1-icon {
   margin-right: 1rem;
+}
+
+@media (max-width: 31.25rem) {
+  .footer__box-2 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .footer__box-2-item {
@@ -258,6 +281,14 @@ p {
   width: 100%;
 }
 
+@media (max-width: 31.25rem) {
+  .footer__box-3 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
 .footer__box-3 ul {
   list-style: none;
   font-size: 1.2rem;
@@ -271,6 +302,14 @@ p {
 
 .footer__box-3 ul li:not(:last-child) {
   padding-bottom: 1rem;
+}
+
+@media (max-width: 31.25rem) {
+  .footer__box-4 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .footer__box-4 ul {
@@ -289,22 +328,29 @@ p {
 }
 
 .footer__box-5 {
-  -ms-flex-item-align: start;
-      align-self: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 31.25rem) {
+  .footer__box-5 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 .footer__box-5-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: .8rem;
   border: 1px solid white;
-  padding: 1.3rem;
+  padding: .6rem;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +392,13 @@ p {
   text-align: center;
 }
 
+@media (max-width: 37.5rem) {
+  .form p {
+    width: 80%;
+    padding: 1rem 10%;
+  }
+}
+
 .form__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +406,22 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 70%;
+}
+
+@media (max-width: 45.63rem) {
+  .form__box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .form__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .form__box input[type="text"] {
@@ -366,6 +434,13 @@ p {
   height: 3.3rem;
   color: #1c2431;
   padding-left: 2rem;
+}
+
+@media (max-width: 37.5rem) {
+  .form__box input[type="text"] {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .form__box input[type="text"]::-webkit-input-placeholder {
@@ -398,6 +473,13 @@ p {
   border-radius: 15px;
   font-weight: 700;
   cursor: pointer;
+}
+
+@media (max-width: 37.5rem) {
+  .form__box button {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .header {
@@ -634,6 +716,7 @@ p {
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding-bottom: 7rem;
 }
 
 .tip__img {
@@ -684,5 +767,15 @@ p {
 
 .tip__box button img {
   padding-left: 2rem;
+}
+
+@media (max-width: 37.5rem) {
+  .tip__box h2 {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .tip__box p {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
